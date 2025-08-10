@@ -6,11 +6,14 @@ body {
     background: #f8f8f8;
 }
 
-/* Texto arriba */
 .texto-seleccion {
-    background: #222;
+    position: absolute;
+    bottom: 0; /* pegado abajo */
+    left: 0;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.7); /* fondo semitransparente */
     color: white;
-    padding: 20px;
+    padding: 15px 10px;
     font-size: 1.2em;
 }
 
