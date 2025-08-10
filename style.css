@@ -8,9 +8,10 @@ body {
 
 /* Contenedor de imágenes de inicio */
 .imagenes-inicio {
+    position: relative;
     display: flex;
     width: 100%;
-    height: calc(100vh - 60px); /* Toda la pantalla menos un espacio para el texto */
+    height: 100vh; /* Ocupa toda la pantalla */
 }
 
 /* Imágenes ajustadas a toda la altura */
@@ -25,15 +26,19 @@ body {
     transform: scale(1.02);
 }
 
-/* Texto de selección */
+/* Texto de selección superpuesto */
 .texto-seleccion {
-    background: #222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.7);
     color: white;
     padding: 15px;
     font-size: 1.2em;
 }
 
-/* Secciones */
+/* Secciones generales */
 section {
     padding: 50px 20px;
 }
