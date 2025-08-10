@@ -1,23 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     text-align: center;
     background: #f8f8f8;
 }
 
-/* Imágenes de inicio */
+/* Contenedor de imágenes de inicio */
 .imagenes-inicio {
     display: flex;
     width: 100%;
+    height: calc(100vh - 60px); /* Toda la pantalla menos un espacio para el texto */
 }
+
+/* Imágenes ajustadas a toda la altura */
 .imagenes-inicio img {
     width: 50%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Mantiene proporción recortando */
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 .imagenes-inicio img:hover {
     transform: scale(1.02);
+}
+
+/* Texto de selección */
+.texto-seleccion {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
 }
 
 /* Secciones */
