@@ -5,7 +5,7 @@ body {
     background: #f8f8f8;
 }
 
-/* Imágenes de inicio a pantalla completa */
+/* Imágenes de inicio */
 .imagenes-inicio {
     display: flex;
     width: 100%;
@@ -28,7 +28,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Portafolio imágenes en 2 columnas */
+/* Portafolio imágenes */
 .grid-imagenes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
